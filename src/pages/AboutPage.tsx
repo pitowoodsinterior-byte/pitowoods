@@ -49,6 +49,7 @@ export function AboutPage() {
                 <img
                   src="/images/img_3.jpg"
                   alt="Our workshop"
+                  loading="lazy"
                   className="rounded-xl shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-peacock-700 to-teal-700 dark:from-peacock-600 dark:to-teal-600 text-white p-8 rounded-xl shadow-xl">

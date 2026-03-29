@@ -90,6 +90,7 @@ export function GallerySection() {
                   <img
                     src={design.image}
                     alt={design.title}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                 </div>
@@ -145,6 +146,7 @@ export function GallerySection() {
             <img
               src={filteredDesigns[lightboxIndex].image}
               alt={filteredDesigns[lightboxIndex].title}
+              loading="lazy"
               className="max-h-[75vh] max-w-full object-contain rounded-xl shadow-2xl"
             />
             <div className="mt-4 text-center">

@@ -119,11 +119,13 @@ export function GalleryPage() {
                       <img
                         src={design.beforeImage}
                         alt={`${design.title} - Before`}
+                        loading="lazy"
                         className="absolute inset-0 w-full h-full object-cover"
                       />
                       <img
                         src={design.image}
                         alt={`${design.title} - After`}
+                        loading="lazy"
                         className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100"
                       />
                       <div className="absolute top-4 right-4 bg-peacock-700 text-white px-3 py-1 rounded-full text-xs font-semibold">
@@ -144,6 +146,7 @@ export function GalleryPage() {
                       <img
                         src={design.image}
                         alt={design.title}
+                        loading="lazy"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                     </div>
@@ -195,6 +198,7 @@ export function GalleryPage() {
             <img
               src={filteredDesigns[currentImageIndex]?.image}
               alt={filteredDesigns[currentImageIndex]?.title}
+              loading="lazy"
               className="max-w-full max-h-full object-contain"
             />
             <div className="text-center mt-4">

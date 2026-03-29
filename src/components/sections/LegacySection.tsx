@@ -69,6 +69,7 @@ export function LegacySection() {
               <img
                 src="https://goodhomes.wwmindia.com/content/2022/dec/varadarajan-house-121671774488.jpg"
                 alt="Heritage craftsmanship"
+                loading="lazy"
                 className="relative rounded-2xl shadow-2xl w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent rounded-2xl"></div>
