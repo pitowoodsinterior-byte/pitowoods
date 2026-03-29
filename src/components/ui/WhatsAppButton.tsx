@@ -3,13 +3,8 @@ import { useState } from 'react';
 
 export function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
-  const phoneNumber = '9600118359';
+  const phoneNumber = '919600118359';
   const message = 'Hello! I am interested in your interior design services.';
-
-  const handleWhatsAppClick = () => {
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank');
-  };
 
   return (
     <>
@@ -30,13 +25,15 @@ export function WhatsAppButton() {
             <p className="text-gray-600 dark:text-gray-400 mb-4 text-sm">
               Have questions about our interior design services? Chat with us on WhatsApp!
             </p>
-            <button
-              onClick={handleWhatsAppClick}
+            <a
+              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full bg-[#25D366] hover:bg-[#20BA5A] text-white font-medium py-3 px-4 rounded-xl flex items-center justify-center space-x-2 transition-all duration-300 hover:scale-105 shadow-lg hover:animate-jelly"
             >
               <MessageCircle className="w-5 h-5" />
               <span>Start Chat</span>
-            </button>
+            </a>
           </div>
         )}
 
