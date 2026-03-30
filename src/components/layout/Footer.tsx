@@ -73,7 +73,7 @@ export function Footer() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-peacock-400 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400">123 Design Street,<br />Interior City, IN 123456</span>
+                <span className="text-gray-400">43 Balaji Nagar main road,<br />Kolathur, Chennai 99</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-peacock-400 flex-shrink-0" />
